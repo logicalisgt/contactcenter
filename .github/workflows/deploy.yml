@@ -20,6 +20,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ACTIONS_RUNNER_FORCED_INTERNAL_NODE_VERSION: node24
     strategy:
       matrix:
         node-version: [22.x]
